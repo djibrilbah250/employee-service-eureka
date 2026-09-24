@@ -20,6 +20,9 @@ public class Employee {
     @Column(name = "age")
     private String age;
 
+    @Column(name = "address_id")
+    private int addressId;
+
     public int getId() {
         return id;
     }
@@ -50,5 +53,13 @@ public class Employee {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public int getAddressId() {
+        return addressId;
+    }
+
+    public void setAddressId(int addressId) {
+        this.addressId = addressId;
     }
 }
